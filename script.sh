@@ -77,29 +77,29 @@ do
 done
 
 # # Associate users with grp_ven
-# for user in 'debora' 'sebastiana' 'roberto'
-# do
-#   usermod -G grp_ven ${user}
-# done
+for user in 'debora' 'sebastiana' 'roberto'
+do
+ usermod -G grp_ven ${user}
+done
 
 # # Associate users with grp_sec
-# for user in 'josefina' 'amanda' 'rogerio'
-# do
-#   usermod -G grp_sec ${user}
-# done
+for user in 'josefina' 'amanda' 'rogerio'
+do
+ usermod -G grp_sec ${user}
+done
 
 # # Change the permissions on /publico directory
-# chmod 777 /publico
+chmod 777 /publico
 
 # # change the permissions and group of /adm directory
-# chown -c root:grp_adm /adm
-# chmod 770 /adm
+chown -c root:grp_adm /adm
+chmod 770 /adm
 
 # # change the permissions and group of /ven directory
-# chown -c root:grp_ven /ven
-# chmod 770 /ven
+chown -c root:grp_ven /ven
+chmod 770 /ven
 
 # # change the permissions and group of /sec directory
-# chown -c root:grp_sec /sec
-# chmod 770 /sec
+chown -c root:grp_sec /sec
+chmod 770 /sec
 
